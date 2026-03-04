@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анатомия человека</title>
+    <style>
+        /* Общие стили и сброс */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(145deg, #f0f2f5 0%, #dae0e8 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        /* Контейнер сайта */
+        .site-container {
+            max-width: 1100px;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(10px);
+            border-radius: 60px 60px 40px 40px;
+            box-shadow: 0 25px 45px -12px rgba(0, 0, 0, 0.35), 
+                        inset 0 -2px 0 rgba(255,255,255,0.7);
+            padding: 40px 30px 30px 30px;
+            border: 2px solid rgba(255,255,255,0.5);
+        }
+
+        /* Заголовок */
+        .header-title {
+            text-align: left;
+            margin-bottom: 30px;
+            padding-left: 20px;
+        }
+
+        .header-title h1 {
+            font-size: 4rem;
+            font-weight: 800;
+            letter-spacing: -2px;
+            color: #2d3a4f;
+            text-shadow: 3px 3px 0 rgba(255,255,255,0.8), 6px 6px 0 rgba(0,0,0,0.1);
+            line-height: 1;
+        }
+
+        /* Сетка карточек (ссылок) */
+        .card-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin: 50px 0 60px 0;
+        }
+
+        .card {
+            flex: 1 1 250px;
+            min-width: 240px;
+            max-width: 300px;
+            background: #fcf9f2;
+            border-radius: 50px 50px 40px 40px;
+            padding: 30px 20px 25px 20px;
+            text-decoration: none;
+            color: #1e2b3a;
+            box-shadow: 0 20px 25px -8px rgba(0,20,30,0.3),
+                        inset 0 -3px 0 rgba(0,0,0,0.05);
+            transition: transform 0.25s ease, box-shadow 0.3s ease;
+            border: 2px solid #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .card:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 32px 35px -12px rgba(0,40,60,0.4);
+            background: #ffffff;
+            border-color: #fffaec;
+        }
+
+        /* Эмодзи/иконка */
+        .card-emoji {
+            font-size: 6rem;
+            line-height: 1;
+            filter: drop-shadow(5px 8px 0 rgba(170, 140, 60, 0.3));
+            margin-bottom: 10px;
+        }
+
+        /* Текст внутри карточки */
+        .card h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin: 5px 0 0 0;
+            background: linear-gradient(145deg, #3a4c61, #1f2c3a);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow: 2px 2px 3px rgba(255,255,240,0.8);
+        }
+
+        /* Подпись снизу */
+        .footer-thanks {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 2.2rem;
+            font-weight: 500;
+            color: #34495e;
+            background: rgba(255, 248, 235, 0.7);
+            padding: 20px 30px;
+            border-radius: 100px;
+            backdrop-filter: blur(4px);
+            border: 1px dashed #8b9eb0;
+            letter-spacing: 1px;
+            box-shadow: inset 0 2px 5px rgba(255,255,255,0.8);
+        }
+
+        /* Мелкий текст про попытку издания */
+        .edition-note {
+            text-align: left;
+            font-size: 0.9rem;
+            color: #5b6f82;
+            margin-bottom: 5px;
+            font-style: italic;
+            background: rgba(250, 245, 235, 0.6);
+            padding: 6px 15px;
+            border-radius: 40px;
+            display: inline-block;
+        }
+
+        /* Адаптация */
+        @media (max-width: 700px) {
+            .header-title h1 {
+                font-size: 3rem;
+            }
+            .footer-thanks {
+                font-size: 1.8rem;
+            }
+        }
+        @медиа максимальнаямаксимальная ширина: 480пхпх {
+            .сайт-контейнер {
+                прокладка: 2020 пх15;
+            }
+            .карточка-эмодзи {
+                размер шрифта: 5бэр;
+            }
+            .карта h2 {
+                размер шрифта: 2бэр;
+            }
+        }
+ </стиль>
+</голова>
+<тело>
+    <див класс="сайт-контейнер">
+ <!-- Надпиь "попытка издания HTML" как в эскизе -->
+        <див класс="примечание к изданию">📄 пунктытка издания HTML</div>
+
+ <!-- Заголовок (можете заменить на свойсвой -->
+        <див класс="заголовок-заголовок">
+            <ч1>ТЕЛО<бр>ЧЕЛОВЕКА</ч1>
+ </див>
+
+ <!-- Сетка карточек-ссылок -->
+        <див класс="карточная сетка">
+ <!-- Мозг -->
+            <a href="mozg.html" класс="карта">
+                <охватывать класс="карта-эмодзи">🧠</охватывать>
+                <h2>МОЗГ</h2>
+ </a>
+ <!-- Скелет -->
+            <a href="скелет.html" класс="карта">
+                <охватывать класс="карта-эмодзи">🦴</охватывать>
+                <h2>СКЕЛЕТ</h2>
+ </a>
+ <!-- Мышцы -->
+            <a href="myshcy.html" класс="карта">
+                <охватывать класс="карта-эмодзи">💪</охватывать>
+                <h2>МЫШЦЫ</h2>
+ </a>
+ </див>
+
+ <!-- Фраза "спасибо за посещение" -->
+        <див класс="благодарности за нижний колонтитул">
+ спасибо за посещение
+ </див>
+ </див>
+</тело>
+ </html>
